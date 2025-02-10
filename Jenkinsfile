@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent {label 'agent1' }
     options {
         timeout(time: 5, unit: 'MINUTES')       // Pipeline will timeout after 5 minutes
         retry(2)                                // Retry the pipeline twice if it fails                          // Add timestamps to console output
